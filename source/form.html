@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head class="page">
+    <meta charset="utf-8" />
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header wrapper">
+      <a href="#" class="page-header__logo-image">
+        <img src="#" alt="cat energy" />
+      </a>
+      <a href="#" class="page-header__logo-text">
+        <img src="#" alt="cat energy" />
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main wrapper">
+      <section class="selection-programm">
+        <h1 class="title">Подбор программы</h1>
+        <h2 class="subtitle">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </h2>
+
+        <form action="POST" class="form">
+          <fieldset class="form__selection-program">
+            <label class="form__label">
+              ИМЯ:*
+              <input type="text" placeholder="БАРСИК" />
+            </label>
+
+            <label class="form__label">
+              ВЕС (КГ):*
+              <input type="number" placeholder="7" />
+            </label>
+
+            <label class="form__label">
+              ВОЗРАСТ (ЛЕТ):
+              <input type="number" placeholder="7" />
+            </label>
+
+            <label class="form__label">
+              <input type="radio" name="meal-plan" />
+              ПОХУДЕНИЕ
+            </label>
+
+            <label class="form__label">
+              <input type="radio" name="meal-plan" />
+              НАБОР МАССЫ
+            </label>
+
+            <label class="form__label">
+              <input type="radio" name="meal-plan" />
+              НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)
+            </label>
+          </fieldset>
+
+          <fieldset class="form__contact-details">
+            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <label class="form__label">
+              E-MAIL:*
+              <input type="email" placeholder="kuklachev@gmail.com" />
+            </label>
+            <label class="form__label">
+              ТЕЛЕФОН:*
+              <input type="tel" placeholder="8 (960) 900-60-90" />
+            </label>
+          </fieldset>
+
+
+          <label class="form__legend">
+            <textarea
+              name="comment"
+              cols="35"
+              rows="10"
+              placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"
+            ></textarea>
+            КОММЕНТАРИЙ
+          </label>
+
+          <fieldset class="form__extra">
+            <legend class="form__legend">ДОПОЛНИТЕЛЬНО</legend>
+            <label class="form__label">
+              <input type="checkbox" />
+              САХАРОЗАМЕНИТЕЛЬ
+            </label>
+            <label class="form__label">
+              <input type="checkbox" />
+              ПИТЬЕВАЯ ВОДА
+            </label>
+            <label class="form__label">
+              <input type="checkbox" />
+              МОЛОКО
+            </label>
+            <label class="form__label">
+              <input type="checkbox" />
+              ВИТАМИНЫ
+            </label>
+          </fieldset>
+
+          <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ">
+
+        </form>
+      </section>
+
+      <p class="page-main__footnote">* — Обязательные поля</p>
+    </main>
+
+    <footer class="page-footer wrapper">
+      <section class="contacts">
+        <span class="contacts__invite">
+          приглашаем к сотрудничеству дилеров!</span
+        >
+        <span class="contacts__address"
+          >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
+        >
+        <img src="#" alt="карта" />
+      </section>
+
+      <section class="about-us">
+        <a href="#" class="about-us__link"
+          ><img class="about-us__logo" src="#" alt="логотип"
+        /></a>
+
+        <div class="about-us__social">
+          <a href="#" class="about-us__link"
+            ><img src="#" alt="логотип вконтакте"
+          /></a>
+          <a href="#" class="about-us__link"
+            ><img src="#" alt="логотип инстаграм"
+          /></a>
+          <a href="#" class="about-us__link"
+            ><img src="#" alt="логотип фейсбук"
+          /></a>
+        </div>
+
+        <div class="about-us__copyright">
+          <span>HTML Academy</span>
+          <img src="#" alt="логотип HTML academy" />
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
