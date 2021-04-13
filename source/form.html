@@ -8,7 +8,7 @@
   <body class="page__body">
     <header class="page-header wrapper">
       <a href="#" class="page-header__logo">
-        <img src="#" alt="cat energy" />
+        <img src="img/svg/cat-energy__logo.svg" alt="cat energy" />
       </a>
 
       <nav class="main-nav">
@@ -31,14 +31,14 @@
     </header>
 
     <main class="page-main wrapper">
-      <section class="selection-programm">
-        <h1 class="title">Подбор программы</h1>
-        <h2 class="subtitle">
-          Заполните анкету, и мы подберем программу питания для вашего кота
+      <section class="selection-program">
+        <h1 class="selection-program__title">Подбор программы</h1>
+        <h2 class="selection-program__subtitle">
+          ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА
         </h2>
 
         <form action="POST" class="form">
-          <fieldset class="form__selection-program">
+          <fieldset class="form__selection-program form__fieldset">
             <label class="form__label">
               ИМЯ:*
               <input type="text" placeholder="БАРСИК" />
@@ -70,7 +70,7 @@
             </label>
           </fieldset>
 
-          <fieldset class="form__contact-details">
+          <fieldset class="form__contact-details form__fieldset">
             <legend class="form__legend">
               Контактные данные (владельца кота)
             </legend>
@@ -85,16 +85,16 @@
           </fieldset>
 
           <label class="form__legend">
+            КОММЕНТАРИЙ
             <textarea
               name="comment"
               cols="35"
               rows="10"
               placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"
             ></textarea>
-            КОММЕНТАРИЙ
           </label>
 
-          <fieldset class="form__extra">
+          <fieldset class="form__extra form__fieldset">
             <legend class="form__legend">ДОПОЛНИТЕЛЬНО</legend>
             <label class="form__label">
               <input type="checkbox" />
@@ -114,7 +114,7 @@
             </label>
           </fieldset>
 
-          <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ" />
+          <input class="form__button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ" />
         </form>
       </section>
 
@@ -124,7 +124,7 @@
     <footer class="page-footer wrapper">
       <section class="contacts">
         <span class="contacts__invite">
-          приглашаем к сотрудничеству дилеров!</span
+          ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</span
         >
         <span class="contacts__address"
           >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
@@ -134,24 +134,24 @@
 
       <section class="about-us">
         <a href="#" class="about-us__link"
-          ><img class="about-us__logo" src="#" alt="логотип"
+          ><img class="about-us__logo" src="img/svg/cat-energy__logo-text.svg" alt="логотип"
         /></a>
 
         <div class="about-us__social">
           <a href="#" class="about-us__link"
-            ><img src="#" alt="логотип вконтакте"
+            ><img src="img/svg/vk.svg" alt="логотип вконтакте"
           /></a>
           <a href="#" class="about-us__link"
-            ><img src="#" alt="логотип инстаграм"
+            ><img src="img/svg/instagram.svg" alt="логотип инстаграм"
           /></a>
           <a href="#" class="about-us__link"
-            ><img src="#" alt="логотип фейсбук"
+            ><img src="img/svg/facebook.svg" alt="логотип фейсбук"
           /></a>
         </div>
 
         <div class="about-us__copyright">
-          <span>HTML Academy</span>
-          <img src="#" alt="логотип HTML academy" />
+          <span class="about-us__copyright-name">HTML Academy</span>
+          <img src="img/svg/html-academy.svg" alt="логотип HTML academy" />
         </div>
       </section>
     </footer>
