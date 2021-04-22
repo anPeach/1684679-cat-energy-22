@@ -1,10 +1,39 @@
+.meal-plan {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
+}
+
 .meal-plan__item {
   background-color: rgba(242, 242, 242, 1);
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
+}
+
+.meal-plan__img {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 70%;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    left: auto;
+  }
 }
 
 .meal-plan__title {
   font-size: 24px;
   line-height: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .meal-plan__description {
@@ -12,9 +41,20 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 60%;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .meal-plan__button {
   font-size: 16px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

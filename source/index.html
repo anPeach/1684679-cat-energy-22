@@ -2,6 +2,7 @@
 <html lang="ru">
   <head class="page">
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -18,13 +19,13 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">ГЛАВНАЯ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
+            <a class="main-nav__link" href="form.html">ПОДБОР ПРОГРАММЫ</a>
           </li>
         </ul>
       </nav>
@@ -42,7 +43,7 @@
       <section class="meal-plan">
         <h2 class="visually-hidden">План питания</h2>
         <div class="meal-plan__item">
-          <img src="img/svg/cat_slim.svg" alt="похудение" />
+          <img class="meal-plan__img" src="img/svg/cat_slim.svg" alt="похудение" />
           <p class="meal-plan__title">ПОХУДЕНИЕ</p>
           <p class="meal-plan__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -53,7 +54,7 @@
           <button class="meal-plan__button">КАТАЛОГ SLIM</button>
         </div>
         <div class="meal-plan__item">
-          <img src="img/svg/cat_pro.svg" alt="набор массы" />
+          <img class="meal-plan__img" src="img/svg/cat_pro.svg" alt="набор массы" />
           <p class="meal-plan__title">НАБОР МАССЫ</p>
           <p class="meal-plan__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -106,16 +107,18 @@
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
 
-        <div class="example__result">
-          <span class="example__result-indicator">5 КГ</span>
-          <span class="example__result-description">снижение веса</span>
-        </div>
-        <div class="example__result">
-          <span class="example__result-indicator">60 ДНЕЙ</span>
-          <span class="example__result-description">затрачено времени</span>
-        </div>
+        <div class="example__description">
+          <div class="example__result">
+            <span class="example__result-indicator">5 КГ</span>
+            <span class="example__result-description">снижение веса</span>
+          </div>
+          <div class="example__result">
+            <span class="example__result-indicator">60 ДНЕЙ</span>
+            <span class="example__result-description">затрачено времени</span>
+          </div>
 
-        <p class="example__cost">ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ.</p>
+          <p class="example__cost">ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ.</p>
+        </div>
 
         <div class="slider">
           <img src="img/png/cat-before.png" alt="кот" />
@@ -134,7 +137,7 @@
         <span class="contacts__address"
           >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
         >
-        <img src="#" alt="карта" />
+        <img src="#" class="contacts__map" alt="карта" />
       </section>
 
       <section class="about-us">

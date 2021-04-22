@@ -15,4 +15,12 @@ body {
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   color: @text-color-black;
+
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
