@@ -11,6 +11,17 @@
   overflow: hidden;
 }
 
+.wrapper {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 body {
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
@@ -20,7 +31,10 @@ body {
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
   }
 }
