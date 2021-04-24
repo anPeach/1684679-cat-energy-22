@@ -1,5 +1,22 @@
 .main-promo {
+  position: relative;
   background-color: @green;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 265px;
+  }
+}
+
+.main-promo__img {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+  }
 }
 
 .main-promo__button {
@@ -7,4 +24,8 @@
   background-color: @green;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+  }
 }
