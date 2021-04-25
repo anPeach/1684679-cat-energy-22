@@ -2,8 +2,9 @@
 <html lang="ru">
   <head class="page">
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="page-header wrapper">
@@ -53,7 +54,9 @@
               ВОЗРАСТ (ЛЕТ):
               <input type="number" placeholder="7" />
             </label>
+          </fieldset>
 
+          <fieldset class="form__food-type form__fieldset">
             <label class="form__label">
               <input type="radio" name="meal-plan" />
               ПОХУДЕНИЕ
@@ -84,18 +87,22 @@
             </label>
           </fieldset>
 
-          <label class="form__legend">
-            КОММЕНТАРИЙ
-            <textarea
-              name="comment"
-              cols="35"
-              rows="10"
-              placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"
-            ></textarea>
-          </label>
+          <div class="form__comment">
+            <label class="form__legend">
+              КОММЕНТАРИЙ
+              <textarea
+                name="comment"
+                cols="35"
+                rows="10"
+                placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"
+              ></textarea>
+            </label>
+          </div>
 
           <fieldset class="form__extra form__fieldset">
-            <legend class="form__legend">ДОПОЛНИТЕЛЬНО</legend>
+            <legend class="form__legend form__extra-legend">
+              ДОПОЛНИТЕЛЬНО
+            </legend>
             <label class="form__label">
               <input type="checkbox" />
               САХАРОЗАМЕНИТЕЛЬ
@@ -114,7 +121,7 @@
             </label>
           </fieldset>
 
-          <input class="button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ" />
+          <input class="button form__button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ" />
         </form>
       </section>
 
@@ -129,7 +136,7 @@
         <span class="contacts__address"
           >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
         >
-        <img src="#" alt="карта" />
+        <img src="#" class="contacts__map" alt="карта" />
       </section>
 
       <section class="about-us">
@@ -155,5 +162,6 @@
         </div>
       </section>
     </footer>
+
   </body>
 </html>
