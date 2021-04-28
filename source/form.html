@@ -2,7 +2,7 @@
 <html lang="ru">
   <head class="page">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -39,52 +39,58 @@
         </h2>
 
         <form action="POST" class="form">
-          <fieldset class="form__selection-program form__fieldset">
-            <label class="form__label">
-              ИМЯ:*
-              <input type="text" placeholder="БАРСИК" />
-            </label>
+          <fieldset class="form__fieldset">
+            <div class="form__selection-program">
+              <label class="form__label">
+                ИМЯ:*
+                <input type="text" placeholder="БАРСИК" />
+              </label>
 
-            <label class="form__label">
-              ВЕС (КГ):*
-              <input type="number" placeholder="7" />
-            </label>
+              <label class="form__label">
+                ВЕС (КГ):*
+                <input type="number" placeholder="7" />
+              </label>
 
-            <label class="form__label">
-              ВОЗРАСТ (ЛЕТ):
-              <input type="number" placeholder="7" />
-            </label>
+              <label class="form__label">
+                ВОЗРАСТ (ЛЕТ):
+                <input type="number" placeholder="7" />
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form__food-type form__fieldset">
-            <label class="form__label">
-              <input type="radio" name="meal-plan" />
-              ПОХУДЕНИЕ
-            </label>
+            <div class="form__food-type">
+              <label class="form__label">
+                <input type="radio" name="meal-plan" />
+                ПОХУДЕНИЕ
+              </label>
 
-            <label class="form__label">
-              <input type="radio" name="meal-plan" />
-              НАБОР МАССЫ
-            </label>
+              <label class="form__label">
+                <input type="radio" name="meal-plan" />
+                НАБОР МАССЫ
+              </label>
 
-            <label class="form__label">
-              <input type="radio" name="meal-plan" />
-              НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)
-            </label>
+              <label class="form__label">
+                <input type="radio" name="meal-plan" />
+                НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)
+              </label>
+            </div>
           </fieldset>
 
-          <fieldset class="form__contact-details form__fieldset">
+          <fieldset class="form__fieldset">
             <legend class="form__legend">
               Контактные данные (владельца кота)
             </legend>
-            <label class="form__label">
-              E-MAIL:*
-              <input type="email" placeholder="kuklachev@gmail.com" />
-            </label>
-            <label class="form__label">
-              ТЕЛЕФОН:*
-              <input type="tel" placeholder="8 (960) 900-60-90" />
-            </label>
+            <div class="form__contact-details">
+              <label class="form__label">
+                E-MAIL:*
+                <input type="email" placeholder="kuklachev@gmail.com" />
+              </label>
+              <label class="form__label">
+                ТЕЛЕФОН:*
+                <input type="tel" placeholder="8 (960) 900-60-90" />
+              </label>
+            </div>
           </fieldset>
 
           <div class="form__comment">
@@ -99,29 +105,35 @@
             </label>
           </div>
 
-          <fieldset class="form__extra form__fieldset">
+          <fieldset class="form__fieldset">
             <legend class="form__legend form__extra-legend">
               ДОПОЛНИТЕЛЬНО
             </legend>
-            <label class="form__label">
-              <input type="checkbox" />
-              САХАРОЗАМЕНИТЕЛЬ
-            </label>
-            <label class="form__label">
-              <input type="checkbox" />
-              ПИТЬЕВАЯ ВОДА
-            </label>
-            <label class="form__label">
-              <input type="checkbox" />
-              МОЛОКО
-            </label>
-            <label class="form__label">
-              <input type="checkbox" />
-              ВИТАМИНЫ
-            </label>
+            <div class="form__extra">
+              <label class="form__label">
+                <input type="checkbox" />
+                САХАРОЗАМЕНИТЕЛЬ
+              </label>
+              <label class="form__label">
+                <input type="checkbox" />
+                ПИТЬЕВАЯ ВОДА
+              </label>
+              <label class="form__label">
+                <input type="checkbox" />
+                МОЛОКО
+              </label>
+              <label class="form__label">
+                <input type="checkbox" />
+                ВИТАМИНЫ
+              </label>
+            </div>
           </fieldset>
 
-          <input class="button form__button" type="submit" value="ОТПРАВИТЬ ЗАЯВКУ" />
+          <input
+            class="button form__button"
+            type="submit"
+            value="ОТПРАВИТЬ ЗАЯВКУ"
+          />
         </form>
       </section>
 
@@ -141,7 +153,10 @@
 
       <section class="about-us">
         <a href="#" class="about-us__link"
-          ><img class="about-us__logo" src="img/svg/cat-energy__logo-text.svg" alt="логотип"
+          ><img
+            class="about-us__logo"
+            src="img/svg/cat-energy__logo-text.svg"
+            alt="логотип"
         /></a>
 
         <div class="about-us__social">
@@ -162,6 +177,5 @@
         </div>
       </section>
     </footer>
-
   </body>
 </html>
