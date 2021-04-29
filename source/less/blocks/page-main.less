@@ -1,6 +1,22 @@
+.page-main {
+  position: relative;
+}
+
 .page-main__footnote {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 835px;
+    left: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 610px;
+    left: 800px;
+  }
 }

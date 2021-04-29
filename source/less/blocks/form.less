@@ -1,3 +1,14 @@
+.form {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form input {
+  margin-bottom: 25px;
+}
+
 .form__label {
   font-size: 16px;
   line-height: 18px;
@@ -11,4 +22,63 @@
 
 .form__fieldset {
   border: 0;
+}
+
+.form__selection-program {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__food-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__contact-details {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 2;
+    flex-direction: row;
+  }
+}
+
+.form__comment {
+  @media (min-width: @desktop-width) {
+    grid-column: span 2;
+  }
+}
+
+.form__extra {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.form__extra-legend {
+  @media (min-width: @tablet-width) {
+    grid-column: span 2;
+  }
+}
+
+.form__button {
+  @media (min-width: @tablet-width) {
+    grid-column: span 2;
+    width: 282px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
