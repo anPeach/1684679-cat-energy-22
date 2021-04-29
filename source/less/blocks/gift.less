@@ -1,5 +1,22 @@
 .gift {
   background-color: @green;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    position: absolute;
+    top: 600px;
+    left: 950px;
+  }
+}
+
+.gift_img {
+  width: 80px;
+  height: 83px;
 }
 
 .gift__text {

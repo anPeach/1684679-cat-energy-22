@@ -2,6 +2,7 @@
 <html lang="ru">
   <head class="page">
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -30,7 +31,7 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main wrapper">
       <h1 class="main-title main-title_black">Каталог продукции</h1>
 
       <section class="food-catalog">
@@ -67,18 +68,20 @@
                 <thead class="food-item__head">
                   CAT ENERGY PRO 1000 г
                 </thead>
-                <tr class="food-item__row">
-                  <td class="food-item__table-item">Масса</td>
-                  <td class="food-item__table-item">1000 Г.</td>
-                </tr>
-                <tr class="food-item__row">
-                  <td class="food-item__table-item">Вкус</td>
-                  <td class="food-item__table-item">Курица</td>
-                </tr>
-                <tr class="food-item__row">
-                  <td class="food-item__table-item">Цена</td>
-                  <td class="food-item__table-item">1000 Р.</td>
-                </tr>
+                <tbody>
+                  <tr class="food-item__row">
+                    <td class="food-item__table-item">Масса</td>
+                    <td class="food-item__table-item">1000 Г.</td>
+                  </tr>
+                  <tr class="food-item__row">
+                    <td class="food-item__table-item">Вкус</td>
+                    <td class="food-item__table-item">Курица</td>
+                  </tr>
+                  <tr class="food-item__row">
+                    <td class="food-item__table-item">Цена</td>
+                    <td class="food-item__table-item">1000 Р.</td>
+                  </tr>
+                </tbody>
               </table>
               <input class="button" type="button" value="ЗАКАЗАТЬ" />
             </div>
@@ -208,12 +211,13 @@
               <input class="button" type="button" value="ЗАКАЗАТЬ" />
             </div>
           </li>
+          <li class="food-catalog__item">
+            <p class="food-catalog__show-more">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</p>
+            <p class="food-catalog__subtitle">На самом деле вкусов гораздо больше!</p>
+
+            <input class="food-catalog__button button" type="button" value="ПОКАЗАТЬ ВСЕ" />
+          </li>
         </ul>
-
-        <p class="food-catalog__show-more">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</p>
-        <p class="food-catalog__subtitle">На самом деле вкусов гораздо больше!</p>
-
-        <input class="food-catalog__button button" type="button" value="ПОКАЗАТЬ ВСЕ" />
       </section>
 
       <section class="extra-catalog">
@@ -225,36 +229,36 @@
             <p class="extra-catalog__value">1 упаковка (100 г)</p>
             <p class="extra-catalog__value">200 Р.</p>
 
-            <input class="button" type="button" value="ЗАКАЗАТЬ" />
+            <input class="extra-catalog__button button" type="button" value="ЗАКАЗАТЬ" />
           </li>
           <li class="extra-catalog__item">
             <p class="extra-catalog__name">ПИТЬЕВАЯ ВОДА</p>
             <p class="extra-catalog__value">5 литров</p>
             <p class="extra-catalog__value">Р.</p>
 
-            <input class="button" type="button" value="ЗАКАЗАТЬ" />
+            <input class="extra-catalog__button button" type="button" value="ЗАКАЗАТЬ" />
           </li>
           <li class="extra-catalog__item">
             <p class="extra-catalog__name">МОЛОКО</p>
             <p class="extra-catalog__value">1 литров</p>
             <p class="extra-catalog__value">100 Р.</p>
 
-            <input class="button" type="button" value="ЗАКАЗАТЬ" />
+            <input class="extra-catalog__button button" type="button" value="ЗАКАЗАТЬ" />
           </li>
           <li class="extra-catalog__item">
             <p class="extra-catalog__name">ВИТАМИНЫ</p>
             <p class="extra-catalog__value">1 упаковка (30 г)</p>
             <p class="extra-catalog__value">300 Р.</p>
 
-            <input class="button" type="button" value="ЗАКАЗАТЬ" />
+            <input class="extra-catalog__button button" type="button" value="ЗАКАЗАТЬ" />
           </li>
         </ul>
       </section>
 
       <div class="gift">
-        <img src="img/svg/gift.svg" alt="подарок" />
+        <img src="img/svg/gift.svg" class="gift__img" alt="подарок" width="70px" height="73px"/>
         <p class="gift__text">
-          Закажите все и получите чехол для кота в подарок!
+          Закажите все<br>и получите чехол для<br>кота в подарок!
         </p>
       </div>
     </main>
@@ -267,12 +271,15 @@
         <span class="contacts__address"
           >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
         >
-        <img src="#" alt="карта" />
+        <img src="#" class="contacts__map" alt="карта" />
       </section>
 
       <section class="about-us">
         <a href="#" class="about-us__link"
-          ><img class="about-us__logo" src="img/svg/cat-energy__logo-text.svg" alt="логотип"
+          ><img
+            class="about-us__logo"
+            src="img/svg/cat-energy__logo-text.svg"
+            alt="логотип"
         /></a>
 
         <div class="about-us__social">
@@ -293,5 +300,6 @@
         </div>
       </section>
     </footer>
+
   </body>
 </html>

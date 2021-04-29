@@ -1,7 +1,30 @@
+.extra-catalog {
+  @media (min-width: @desktop-width) {
+    width: 895px;
+  }
+}
+
 .extra-catalog__title {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.extra-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.extra-catalog__item {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .extra-catalog__name {
@@ -14,4 +37,14 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+}
+
+.extra-catalog__button {
+  @media (min-width: @tablet-width) {
+    grid-column: span 3;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-column: 4;
+  }
 }
