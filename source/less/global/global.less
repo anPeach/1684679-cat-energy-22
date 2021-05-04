@@ -22,10 +22,20 @@
   }
 }
 
+.inner-wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: none;
+  }
+}
+
 body {
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   color: @text-color-black;
+  margin: 0;
 
   box-sizing: border-box;
 

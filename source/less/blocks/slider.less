@@ -1,8 +1,27 @@
 .slider {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eaeaea;
+    height: 462px;
+    margin: 0 -30px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-column: 2;
     grid-row-start: 1;
     grid-row-end: -1;
+    background: none;
+  }
+}
+
+.slider__range-container {
+  display: flex;
+  justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    width: 570px;
   }
 }
 

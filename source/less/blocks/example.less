@@ -1,8 +1,43 @@
 .example {
+  background-color: rgba(234, 234, 234, 1);
+  box-sizing: border-box;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+    padding-bottom: 0;
+  }
+
   @media (min-width: @desktop-width) {
+    margin: 0 -110px;
+    background-color: rgba(234, 234, 234, 1);
+  }
+}
+
+.example__container {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    height: 462px;
+    margin-top: 200px;
+  }
+}
+
+.example__title {
+  margin: 0;
+  padding: 25px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 35px 0 55px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -160px;
   }
 }
 
@@ -15,39 +50,101 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 70px 0;
   }
 }
 
 .example__description {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  justify-content: space-between;
+  row-gap: 25px;
+
   @media (min-width: @tablet-width) {
-    display: flex;
+    grid-template-columns: 162px 1fr 174px;
+    column-gap: 40px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 164px 1fr;
   }
 }
 
+.example__result {
+  position: relative;
+}
+
 .example__result-indicator {
+  display: block;
   font-size: 24px;
   line-height: 24px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    width: 162px;
+    height: 72px;
   }
 }
 
 .example__result-description {
+  display: block;
+  width: 87px;
   font-size: 12px;
   line-height: 12px;
+  position: absolute;
+  left: 20px;
+  top: 47px;
+  text-align: center;
+  background-color: rgba(234, 234, 234, 1);
 
   @media (min-width: @tablet-width) {
     font-size: 13px;
+    background-color: @text-color-white;
+    left: 40px;
+    top: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(234, 234, 234, 1);
   }
 }
 
 .example__cost {
   font-size: 12px;
   line-height: 20px;
+  grid-column: span 2;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    grid-column: 3;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: start;
+  }
+}
+
+.example__cost-value {
+  @media (min-width: @desktop-width) {
+    margin-left: 60px;
   }
 }

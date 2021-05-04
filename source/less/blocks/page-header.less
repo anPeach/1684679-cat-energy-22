@@ -1,6 +1,12 @@
 .page-header {
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
+  }
 }
 
 .page-header__logo {

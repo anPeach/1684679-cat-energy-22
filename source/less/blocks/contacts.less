@@ -1,17 +1,44 @@
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 25px 20px 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    margin: 66px 72px 0 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    padding: 60px 90px 50px 76px;
+  }
 }
 
 .contacts__invite {
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contacts__address {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    text-align: end;
+  }
+}
+
+.contacts__city {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 .contacts__map {
