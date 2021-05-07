@@ -1,8 +1,14 @@
 .main-promo {
   position: relative;
   min-width: 320px;
+  margin: 0 -20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     margin-bottom: 265px;
   }
 }
@@ -22,20 +28,6 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 90px;
-  }
-}
-
-.main-promo__wrapper::after {
-  @media (min-width: @desktop-width) {
-    content: "";
-    position: absolute;
-    width: 720px;
-    height: 695px;
-    top: -200px;
-    right: -110px;
-    z-index: -1;
-    background: linear-gradient(fade(@green, 70%), fade(@green, 70%)),
-      no-repeat url("../../img/jpeg/promo-background.jpg");
   }
 }
 

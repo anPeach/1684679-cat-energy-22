@@ -33,14 +33,19 @@
   }
 }
 
-.meal-plan__img {
+.meal-plan__item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 22px;
+  top: 24px;
+
   @media (min-width: @tablet-width) {
-    position: absolute;
     left: 450px;
     top: 80px;
     width: 200px;
     height: 200px;
-    z-index: 10;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,22 +55,33 @@
   }
 }
 
-.meal-plan__img_bigger {
+.meal-plan__item_slim::before {
+  background: no-repeat url("../../img/svg/cat_slim.svg");
+  z-index: 10;
+
   @media (min-width: @tablet-width) {
-    width: 268px;
-    left: 420px;
+    background-size: 200px 200px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 134px;
-    height: 100px;
+    background-size: 100px 100px;
   }
 }
 
-.meal-plan__img_displaced {
+.meal-plan__item_pro::before {
+  background: no-repeat url("../../img/svg/cat_pro.svg");
+  z-index: 10;
   margin-left: -10px;
+  width: 67px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 268px 200px;
+    left: 420px;
+    width: 268px;
+  }
 
   @media (min-width: @desktop-width) {
+    background-size: 134px 100px;
     margin-left: -20px;
   }
 }
@@ -75,6 +91,7 @@
   margin-left: 20px;
   font-size: 24px;
   line-height: 37px;
+  grid-column: 2;
 
   @media (min-width: @tablet-width) {
     grid-column: span 2;

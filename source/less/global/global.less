@@ -13,21 +13,14 @@
 
 .wrapper {
   @media (min-width: @tablet-width) {
+    max-width: 900px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
+    position: relative;
     max-width: 1220px;
     margin: 0 auto;
-  }
-}
-
-.inner-wrapper {
-  max-width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: @tablet-width) {
-    max-width: none;
   }
 }
 
@@ -36,6 +29,7 @@ body {
   font-weight: 400;
   color: @text-color-black;
   margin: 0;
+  padding: 0 20px;
 
   box-sizing: border-box;
 

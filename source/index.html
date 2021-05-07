@@ -6,7 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header wrapper">
       <a href="#" class="page-header__logo">
         <img src="img/svg/cat-energy__logo.svg" alt="cat energy" />
@@ -31,8 +31,8 @@
       </nav>
     </header>
 
-    <main class="page-main wrapper">
-      <section class="main-promo">
+    <main class="page-main">
+      <section class="main-promo wrapper">
         <div class="main-promo__wrapper">
           <h1 class="main-title">Функциональное<br />питание для котов</h1>
           <h2 class="main-title__subtitle">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</h2>
@@ -47,14 +47,9 @@
         </a>
       </section>
 
-      <section class="meal-plan inner-wrapper">
+      <section class="meal-plan wrapper">
         <h2 class="visually-hidden">План питания</h2>
-        <div class="meal-plan__item">
-          <img
-            class="meal-plan__img"
-            src="img/svg/cat_slim.svg"
-            alt="похудение"
-          />
+        <div class="meal-plan__item meal-plan__item_slim">
           <p class="meal-plan__title">ПОХУДЕНИЕ</p>
           <p class="meal-plan__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -64,12 +59,7 @@
 
           <button class="meal-plan__button">КАТАЛОГ SLIM</button>
         </div>
-        <div class="meal-plan__item">
-          <img
-            class="meal-plan__img meal-plan__img_bigger meal-plan__img_displaced"
-            src="img/svg/cat_pro.svg"
-            alt="набор массы"
-          />
+        <div class="meal-plan__item meal-plan__item_pro">
           <p class="meal-plan__title">НАБОР МАССЫ</p>
           <p class="meal-plan__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -80,56 +70,28 @@
         </div>
       </section>
 
-      <section class="how-it-works inner-wrapper">
+      <section class="how-it-works wrapper">
         <h1 class="how-it-works__title title">Как это работает</h1>
         <ul class="advantages-list">
           <li class="advantages-list__item advantages-list__item_first">
-            <img
-              src="img/svg/leaf.svg"
-              class="advantages-list__img"
-              alt="Функциональное питание"
-              width="60px"
-              height="60px"
-            />
             <p class="advantages-list__description">
               Функциональное питание содержит только полезные питательные
               вещества.
             </p>
           </li>
           <li class="advantages-list__item advantages-list__item_second">
-            <img
-              src="img/svg/water.svg"
-              class="advantages-list__img"
-              alt="Выпускается в виде порошка"
-              width="60px"
-              height="60px"
-            />
             <p class="advantages-list__description">
               Выпускается в виде порошка, который нужно лишь залить кипятком и
               готово.
             </p>
           </li>
           <li class="advantages-list__item advantages-list__item_third">
-            <img
-              src="img/svg/cutlery.svg"
-              class="advantages-list__img"
-              alt="Замените приемы еды на наше питание"
-              width="60px"
-              height="60px"
-            />
             <p class="advantages-list__description">
               Замените один-два приема обычной еды на наше функциональное
               питание.
             </p>
           </li>
           <li class="advantages-list__item advantages-list__item_fourth">
-            <img
-              src="img/svg/clock.svg"
-              class="advantages-list__img"
-              alt="Изменениями к лучшему"
-              width="60px"
-              height="60px"
-            />
             <p class="advantages-list__description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего
               питомца!
@@ -139,10 +101,9 @@
       </section>
 
       <section class="example">
-
         <div class="decorative-line"></div>
 
-        <div class="inner-wrapper example__container">
+        <div class="example__container">
           <h2 class="example__title title">Живой пример</h2>
           <p class="example__subtitle">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -165,39 +126,52 @@
               >
             </div>
 
-            <p class="example__cost">ЗАТРАТЫ НА ПИТАНИЕ: <span class="example__cost-value">15 000 РУБ.</span></p>
+            <p class="example__cost">
+              ЗАТРАТЫ НА ПИТАНИЕ:
+              <span class="example__cost-value">15 000 РУБ.</span>
+            </p>
           </div>
-
-          <div class="slider">
-            <img src="img/png/cat-before.png" class="slider__img" alt="кот" width="311px" height="232px" />
-            <div class="slider__range-container">
-              <span class="slider__indicator">БЫЛО</span>
-              <div class="slider__range"></div>
-              <span class="slider__indicator">СТАЛО</span>
-            </div>
+        </div>
+        <div class="slider">
+          <img
+            src="img/png/cat-before.png"
+            class="slider__img"
+            alt="кот"
+            width="311px"
+            height="232px"
+          />
+          <div class="slider__range-container">
+            <span class="slider__indicator">БЫЛО</span>
+            <div class="slider__range"></div>
+            <span class="slider__indicator">СТАЛО</span>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer wrapper">
+    <footer class="page-footer">
       <section class="contacts">
-        <span class="contacts__invite">
-          ПРИГЛАШАЕМ<br/>К СОТРУДНИЧЕСТВУ<br/>ДИЛЕРОВ!</span
-        >
-        <span class="contacts__address"
-          >ул. Большая<br/>Конюшенная, д. 19/8<br/><span class="contacts__city">Санкт-Петербург</span></span
-        >
-        <img src="#" class="contacts__map" alt="карта" />
+        <div class="wrapper">
+          <div class="contacts__info">
+            <span class="contacts__invite">
+              ПРИГЛАШАЕМ<br />К СОТРУДНИЧЕСТВУ<br />ДИЛЕРОВ!</span
+            >
+            <span class="contacts__address"
+              >ул. Большая<br />Конюшенная, д. 19/8<br /><span
+                class="contacts__city"
+                >Санкт-Петербург</span
+              ></span
+            >
+          </div>
+        </div>
+        <img src="img/map.jpg" class="contacts__map" alt="карта" />
       </section>
 
       <section class="about-us">
-        <div class="inner-wrapper about-us__container">
+        <div class="about-us__container">
           <div class="about-us__logo">
             <a href="#" class="about-us__link"
-              ><img
-                src="img/svg/cat-energy__logo-text.svg"
-                alt="логотип"
+              ><img src="img/svg/cat-energy__logo-text.svg" alt="логотип"
             /></a>
           </div>
 

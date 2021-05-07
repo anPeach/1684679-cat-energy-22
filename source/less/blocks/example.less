@@ -1,29 +1,38 @@
 .example {
-  background-color: rgba(234, 234, 234, 1);
+  position: relative;
   box-sizing: border-box;
+  padding: 0 20px;
   padding-bottom: 40px;
+  background-color: #eaeaea;
+  margin: 0 -20px;
 
   @media (min-width: @tablet-width) {
     background: none;
-    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 -110px;
-    background-color: rgba(234, 234, 234, 1);
+    margin-top: 210px;
+    background-color: #eaeaea;
   }
 }
 
 .example__container {
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 1220px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 436px 1fr;
+    grid-template-rows: 1fr 1fr;
     height: 462px;
-    margin-top: 200px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -71,6 +80,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-column: 1;
+    grid-row: 2;
     grid-template-columns: 164px 1fr;
   }
 }
