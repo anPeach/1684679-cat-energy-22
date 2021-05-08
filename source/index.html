@@ -2,23 +2,23 @@
 <html lang="ru">
   <head class="page">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header wrapper">
       <a href="#" class="page-header__logo">
         <img src="img/svg/cat-energy__logo.svg" alt="cat energy" />
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav_closed">
         <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item main-nav__item_active">
             <a class="main-nav__link" href="index.html">ГЛАВНАЯ</a>
           </li>
           <li class="main-nav__item">
@@ -31,19 +31,25 @@
       </nav>
     </header>
 
-
-    <main class="page-main wrapper">
-      <section class="main-promo">
-        <h1 class="main-title">Функциональное<br />питание для котов</h1>
-        <h2 class="main-title__subtitle">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</h2>
-        <img src="img/png/promo_cat-energy.png" class="main-promo__img" alt="cat energy с курицей" />
-        <a class="main-promo__button button">ПОДОБРАТЬ ПРОГРАММУ</a>
+    <main class="page-main">
+      <section class="main-promo wrapper">
+        <div class="main-promo__wrapper">
+          <h1 class="main-title">Функциональное<br />питание для котов</h1>
+          <h2 class="main-title__subtitle">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</h2>
+          <img
+            src="img/png/promo_cat-energy.png"
+            class="main-promo__img"
+            alt="cat energy с курицей"
+          />
+        </div>
+        <a href="form.html" class="main-promo__button button">
+          ПОДОБРАТЬ ПРОГРАММУ
+        </a>
       </section>
 
-      <section class="meal-plan">
+      <section class="meal-plan wrapper">
         <h2 class="visually-hidden">План питания</h2>
-        <div class="meal-plan__item">
-          <img class="meal-plan__img" src="img/svg/cat_slim.svg" alt="похудение" />
+        <div class="meal-plan__item meal-plan__item_slim">
           <p class="meal-plan__title">ПОХУДЕНИЕ</p>
           <p class="meal-plan__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -53,8 +59,7 @@
 
           <button class="meal-plan__button">КАТАЛОГ SLIM</button>
         </div>
-        <div class="meal-plan__item">
-          <img class="meal-plan__img" src="img/svg/cat_pro.svg" alt="набор массы" />
+        <div class="meal-plan__item meal-plan__item_pro">
           <p class="meal-plan__title">НАБОР МАССЫ</p>
           <p class="meal-plan__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -65,32 +70,28 @@
         </div>
       </section>
 
-      <section class="how-it-works">
+      <section class="how-it-works wrapper">
         <h1 class="how-it-works__title title">Как это работает</h1>
         <ul class="advantages-list">
-          <li class="advantages-list__item">
-            <img src="img/svg/leaf.svg" alt="Функциональное питание" />
+          <li class="advantages-list__item advantages-list__item_first">
             <p class="advantages-list__description">
               Функциональное питание содержит только полезные питательные
               вещества.
             </p>
           </li>
-          <li class="advantages-list__item">
-            <img src="img/svg/water.svg" alt="Выпускается в виде порошка" />
+          <li class="advantages-list__item advantages-list__item_second">
             <p class="advantages-list__description">
               Выпускается в виде порошка, который нужно лишь залить кипятком и
               готово.
             </p>
           </li>
-          <li class="advantages-list__item">
-            <img src="img/svg/cutlery.svg" alt="Замените приемы еды на наше питание" />
+          <li class="advantages-list__item advantages-list__item_third">
             <p class="advantages-list__description">
               Замените один-два приема обычной еды на наше функциональное
               питание.
             </p>
           </li>
-          <li class="advantages-list__item">
-            <img src="img/svg/clock.svg" alt="Изменениями к лучшему" />
+          <li class="advantages-list__item advantages-list__item_fourth">
             <p class="advantages-list__description">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего
               питомца!
@@ -100,68 +101,115 @@
       </section>
 
       <section class="example">
-        <h2 class="example__title title">Живой пример</h2>
-        <p class="example__subtitle">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
+        <div class="decorative-line"></div>
 
-        <div class="example__description">
-          <div class="example__result">
-            <span class="example__result-indicator">5 КГ</span>
-            <span class="example__result-description">снижение веса</span>
-          </div>
-          <div class="example__result">
-            <span class="example__result-indicator">60 ДНЕЙ</span>
-            <span class="example__result-description">затрачено времени</span>
-          </div>
+        <div class="example__container">
+          <h2 class="example__title title">Живой пример</h2>
+          <p class="example__subtitle">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день.
+          </p>
 
-          <p class="example__cost">ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ.</p>
+          <div class="example__description">
+            <div class="example__result">
+              <span class="example__result-indicator">5 КГ</span>
+              <span class="example__result-description"
+                >снижение<br />веса</span
+              >
+            </div>
+            <div class="example__result">
+              <span class="example__result-indicator">60 ДНЕЙ</span>
+              <span class="example__result-description"
+                >затрачено<br />времени</span
+              >
+            </div>
+
+            <p class="example__cost">
+              ЗАТРАТЫ НА ПИТАНИЕ:
+              <span class="example__cost-value">15 000 РУБ.</span>
+            </p>
+          </div>
         </div>
-
         <div class="slider">
-          <img src="img/png/cat-before.png" alt="кот" />
-          <span class="slider__indicator">БЫЛО</span>
-          <div class="slider__range"></div>
-          <span class="slider__indicator">СТАЛО</span>
+          <img
+            src="img/png/cat-before.png"
+            class="slider__img"
+            alt="кот"
+            width="311px"
+            height="232px"
+          />
+          <div class="slider__range-container">
+            <span class="slider__indicator">БЫЛО</span>
+            <div class="slider__range"></div>
+            <span class="slider__indicator">СТАЛО</span>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer wrapper">
+    <footer class="page-footer">
       <section class="contacts">
-        <span class="contacts__invite">
-          ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</span
-        >
-        <span class="contacts__address"
-          >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
-        >
-        <img src="#" class="contacts__map" alt="карта" />
+        <div class="wrapper">
+          <div class="contacts__info">
+            <span class="contacts__invite">
+              ПРИГЛАШАЕМ<br />К СОТРУДНИЧЕСТВУ<br />ДИЛЕРОВ!</span
+            >
+            <span class="contacts__address"
+              >ул. Большая<br />Конюшенная, д. 19/8<br /><span
+                class="contacts__city"
+                >Санкт-Петербург</span
+              ></span
+            >
+          </div>
+        </div>
+        <img src="img/map.jpg" class="contacts__map" alt="карта" />
       </section>
 
       <section class="about-us">
-        <a href="#" class="about-us__link"
-          ><img class="about-us__logo" src="img/svg/cat-energy__logo-text.svg" alt="логотип"
-        /></a>
+        <div class="about-us__container">
+          <div class="about-us__logo">
+            <a href="#" class="about-us__link"
+              ><img src="img/svg/cat-energy__logo-text.svg" alt="логотип"
+            /></a>
+          </div>
 
-        <div class="about-us__social">
-          <a href="#" class="about-us__link"
-            ><img src="img/svg/vk.svg" alt="логотип вконтакте"
-          /></a>
-          <a href="#" class="about-us__link"
-            ><img src="img/svg/instagram.svg" alt="логотип инстаграм"
-          /></a>
-          <a href="#" class="about-us__link"
-            ><img src="img/svg/facebook.svg" alt="логотип фейсбук"
-          /></a>
-        </div>
+          <div class="about-us__social">
+            <a href="#" class="about-us__link"
+              ><img src="img/svg/vk.svg" alt="логотип вконтакте"
+            /></a>
+            <a href="#" class="about-us__link"
+              ><img src="img/svg/instagram.svg" alt="логотип инстаграм"
+            /></a>
+            <a href="#" class="about-us__link"
+              ><img src="img/svg/facebook.svg" alt="логотип фейсбук"
+            /></a>
+          </div>
 
-        <div class="about-us__copyright">
-          <span class="about-us__copyright-name">HTML Academy</span>
-          <img src="img/svg/html-academy.svg" alt="логотип HTML academy" />
+          <div class="about-us__copyright">
+            <span class="about-us__copyright-name">HTML Academy</span>
+            <img src="img/svg/html-academy.svg" alt="логотип HTML academy" />
+          </div>
         </div>
       </section>
     </footer>
+
+    <script>
+      var navMain = document.querySelector(".main-nav");
+      var navToggle = document.querySelector(".main-nav__toggle");
+
+      navMain.classList.remove("main-nav_nojs");
+
+      navToggle.addEventListener("click", function () {
+        if (navMain.classList.contains("main-nav_closed")) {
+          navMain.classList.remove("main-nav_closed");
+          navMain.classList.add("main-nav_opened");
+        } else {
+          navMain.classList.add("main-nav_closed");
+          navMain.classList.remove("main-nav_opened");
+        }
+      });
+    </script>
   </body>
 </html>

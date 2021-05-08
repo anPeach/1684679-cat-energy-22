@@ -1,0 +1,14 @@
+.page-body::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 695px;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    background: linear-gradient(fade(@green, 85%), fade(@green, 85%)),
+      no-repeat url("../img/jpeg/promo-background.jpg");
+    background-size: auto 695px;
+  }
+}
