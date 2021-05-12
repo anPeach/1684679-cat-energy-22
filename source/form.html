@@ -12,28 +12,27 @@
         <img src="img/svg/cat-energy__logo.svg" alt="cat energy" />
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav_closed">
         <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" href="index.html">Главная</a>
+          <li class="main-nav__item main-nav__item_active">
+            <a class="main-nav__link main-nav__link_black" href="index.html">ГЛАВНАЯ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link_black" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link_black" href="form.html">ПОДБОР ПРОГРАММЫ</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="page-main wrapper">
-      <section class="selection-program">
-        <h1 class="main-title main-title_black">Подбор программы</h1>
+    <main class="page-main wrapper selection-program__wrapper">
+        <h1 class="main-title main-title_black selection-program__title">Подбор программы</h1>
         <h2 class="selection-program__subtitle">
           ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА
         </h2>
@@ -42,66 +41,66 @@
           <fieldset class="form__fieldset">
             <div class="form__selection-program">
               <label class="form__label">
-                ИМЯ:*
+                <span class="form__label-text">ИМЯ:*</span>
                 <input type="text" placeholder="БАРСИК" />
               </label>
 
               <label class="form__label">
-                ВЕС (КГ):*
+                <span class="form__label-text">ВЕС (КГ):*</span>
                 <input type="number" placeholder="7" />
               </label>
 
               <label class="form__label">
-                ВОЗРАСТ (ЛЕТ):
+                <span class="form__label-text">ВОЗРАСТ (ЛЕТ):</span>
                 <input type="number" placeholder="7" />
-              </label>
-            </div>
-          </fieldset>
-
-          <fieldset class="form__food-type form__fieldset">
-            <div class="form__food-type">
-              <label class="form__label">
-                <input type="radio" name="meal-plan" />
-                ПОХУДЕНИЕ
-              </label>
-
-              <label class="form__label">
-                <input type="radio" name="meal-plan" />
-                НАБОР МАССЫ
-              </label>
-
-              <label class="form__label">
-                <input type="radio" name="meal-plan" />
-                НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)
               </label>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__legend">
+            <div class="form__food-type">
+              <label class="form__label form__food-type-item">
+                <input type="radio" name="meal-plan" />
+                <span class="form__food-type-label">ПОХУДЕНИЕ</span>
+              </label>
+
+              <label class="form__label form__food-type-item">
+                <input type="radio" name="meal-plan" />
+                <span class="form__food-type-label">НАБОР МАССЫ</span>
+              </label>
+
+              <label class="form__label form__food-type-item">
+                <input type="radio" name="meal-plan" />
+                <span class="form__food-type-label">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__contact-details">
+            <legend class="form__legend form__contact-details-legend">
               Контактные данные (владельца кота)
             </legend>
-            <div class="form__contact-details">
-              <label class="form__label">
-                E-MAIL:*
-                <input type="email" placeholder="kuklachev@gmail.com" />
+            <div class="form__contact-details-container">
+              <label class="form__label form__email">
+                <span class="form__label-text">E-MAIL:*</span>
+                <input type="email" placeholder="KUKLACHEV@GMAIL.COM" />
               </label>
-              <label class="form__label">
-                ТЕЛЕФОН:*
+              <label class="form__label form__phone">
+                <span class="form__label-text">ТЕЛЕФОН:*</span>
                 <input type="tel" placeholder="8 (960) 900-60-90" />
               </label>
             </div>
           </fieldset>
 
           <div class="form__comment">
-            <label class="form__legend">
-              КОММЕНТАРИЙ
+            <label class="form__legend form__comment-container">
+              <span class="form__comment-legend">КОММЕНТАРИЙ</span>
               <textarea
+                class="form__textarea"
                 name="comment"
                 cols="35"
                 rows="10"
-                placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"
-              ></textarea>
+              >РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
             </label>
           </div>
 
@@ -110,21 +109,21 @@
               ДОПОЛНИТЕЛЬНО
             </legend>
             <div class="form__extra">
-              <label class="form__label">
+              <label class="form__label form__extra-label">
                 <input type="checkbox" />
-                САХАРОЗАМЕНИТЕЛЬ
+                <span class="form__extra-text">САХАРОЗАМЕНИТЕЛЬ</span>
               </label>
-              <label class="form__label">
+              <label class="form__label form__extra-label">
                 <input type="checkbox" />
-                ПИТЬЕВАЯ ВОДА
+                <span class="form__extra-text">ПИТЬЕВАЯ ВОДА</span>
               </label>
-              <label class="form__label">
+              <label class="form__label form__extra-label">
                 <input type="checkbox" />
-                МОЛОКО
+                <span class="form__extra-text">МОЛОКО</span>
               </label>
-              <label class="form__label">
+              <label class="form__label form__extra-label">
                 <input type="checkbox" />
-                ВИТАМИНЫ
+                <span class="form__extra-text">ВИТАМИНЫ</span>
               </label>
             </div>
           </fieldset>
@@ -140,42 +139,67 @@
       <p class="page-main__footnote">* — Обязательные поля</p>
     </main>
 
-    <footer class="page-footer wrapper">
-      <section class="contacts">
-        <span class="contacts__invite">
-          ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</span
-        >
-        <span class="contacts__address"
-          >ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span
-        >
-        <img src="#" class="contacts__map" alt="карта" />
+    <footer class="page-footer selection-program__page-footer">
+      <section class="contacts selection-program__contacts">
+        <div class="wrapper">
+          <div class="contacts__info">
+            <span class="contacts__invite">
+              ПРИГЛАШАЕМ<br />К СОТРУДНИЧЕСТВУ<br />ДИЛЕРОВ!</span
+            >
+            <span class="contacts__address"
+              >ул. Большая<br />Конюшенная, д. 19/8<br /><span
+                class="contacts__city"
+                >Санкт-Петербург</span
+              ></span
+            >
+          </div>
+        </div>
+        <img src="img/map.jpg" class="contacts__map" alt="карта" />
       </section>
 
-      <section class="about-us">
-        <a href="#" class="about-us__link"
-          ><img
-            class="about-us__logo"
-            src="img/svg/cat-energy__logo-text.svg"
-            alt="логотип"
-        /></a>
+      <section class="about-us selection-program__about-us">
+        <div class="about-us__container">
+          <div class="about-us__logo">
+            <a href="#" class="about-us__link"
+              ><img src="img/svg/cat-energy__logo-text.svg" alt="логотип"
+            /></a>
+          </div>
 
-        <div class="about-us__social">
-          <a href="#" class="about-us__link"
-            ><img src="img/svg/vk.svg" alt="логотип вконтакте"
-          /></a>
-          <a href="#" class="about-us__link"
-            ><img src="img/svg/instagram.svg" alt="логотип инстаграм"
-          /></a>
-          <a href="#" class="about-us__link"
-            ><img src="img/svg/facebook.svg" alt="логотип фейсбук"
-          /></a>
-        </div>
+          <div class="about-us__social">
+            <a href="#" class="about-us__link"
+              ><img src="img/svg/vk.svg" alt="логотип вконтакте"
+            /></a>
+            <a href="#" class="about-us__link"
+              ><img src="img/svg/instagram.svg" alt="логотип инстаграм"
+            /></a>
+            <a href="#" class="about-us__link"
+              ><img src="img/svg/facebook.svg" alt="логотип фейсбук"
+            /></a>
+          </div>
 
-        <div class="about-us__copyright">
-          <span class="about-us__copyright-name">HTML Academy</span>
-          <img src="img/svg/html-academy.svg" alt="логотип HTML academy" />
+          <div class="about-us__copyright">
+            <span class="about-us__copyright-name">HTML Academy</span>
+            <img src="img/svg/html-academy.svg" alt="логотип HTML academy" />
+          </div>
         </div>
       </section>
     </footer>
+
+    <script>
+      var navMain = document.querySelector(".main-nav");
+      var navToggle = document.querySelector(".main-nav__toggle");
+
+      navMain.classList.remove("main-nav_nojs");
+
+      navToggle.addEventListener("click", function () {
+        if (navMain.classList.contains("main-nav_closed")) {
+          navMain.classList.remove("main-nav_closed");
+          navMain.classList.add("main-nav_opened");
+        } else {
+          navMain.classList.add("main-nav_closed");
+          navMain.classList.remove("main-nav_opened");
+        }
+      });
+    </script>
   </body>
 </html>
