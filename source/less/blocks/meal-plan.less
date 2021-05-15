@@ -8,7 +8,6 @@
 .meal-plan__item {
   background-color: rgba(242, 242, 242, 1);
   position: relative;
-  width: 280px;
   height: 266px;
   margin-top: 20px;
   display: grid;
@@ -18,7 +17,6 @@
 
   @media (min-width: @tablet-width) {
     grid-template-rows: 1fr 120px 1fr;
-    width: 708px;
     height: 372px;
     padding: 67px 62px 47px 52px;
     margin-top: 0;
@@ -151,15 +149,18 @@
   background: no-repeat url("../img/svg/arrow.svg");
   width: 24px;
   height: 12px;
-  right: 90px;
-  top: 20px;
+  left: 135px;
+  top: 48%;
+  transform: translateY(-50%);
 
   @media (min-width: @tablet-width) {
     left: 170px;
-    top: 30px;
+    top: 55%;
+    transform: translateY(-50%);
   }
 
   @media (min-width: @desktop-width) {
-    top: 22px;
+    top: 60%;
+    transform: translateY(-50%);
   }
 }

@@ -4,12 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
+
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="img/favicon/favicon-svg.svg"/>
+    <link rel="apple-touch-icon" href="img/favicon/favicon-180.png"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img src="img/svg/cat-energy__logo-mobile.svg" alt="cat energy" />
+      <a href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/svg/cat-energy__logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/svg/cat-energy__logo-tablet.svg">
+          <img class="page-header__logo" src="img/svg/cat-energy__logo-mobile.svg" alt="cat energy" width="190" height="38"/>
+        </picture>
       </a>
 
       <nav class="main-nav main-nav_closed">
@@ -36,11 +46,15 @@
         <div class="main-promo__wrapper">
           <h1 class="main-title">Функциональное<br />питание для котов</h1>
           <h2 class="main-title__subtitle">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</h2>
-          <img
-            src="img/png/promo_cat-energy.png"
-            class="main-promo__img"
-            alt="cat energy с курицей"
-          />
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/png/promo-desktop.png 1x, img/png/promo-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/png/promo-tablet.png 1x, img/png/promo-tablet@2x.png 2x">
+            <img
+              src="img/png/promo-mobile.png" srcset="img/png/promo-mobile@2x.png 2x"
+              class="main-promo__img"
+              alt="cat energy с курицей"
+            />
+          </picture>
         </div>
         <a href="form.html" class="main-promo__button button">
           ПОДОБРАТЬ ПРОГРАММУ
