@@ -8,8 +8,24 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img src="img/svg/cat-energy__logo-mobile.svg" alt="cat energy" />
+      <a href="index.html">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="img/svg/cat-energy__logo-desktop.svg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/svg/cat-energy__logo-tablet.svg"
+          />
+          <img
+            class="page-header__logo"
+            src="img/svg/cat-energy__logo-mobile.svg"
+            alt="cat energy"
+            width="190"
+            height="38"
+          />
+        </picture>
       </a>
 
       <nav class="main-nav main-nav_closed">
@@ -19,122 +35,138 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link_black" href="index.html">ГЛАВНАЯ</a>
+            <a class="main-nav__link main-nav__link_black" href="index.html"
+              >ГЛАВНАЯ</a
+            >
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link_black" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
+            <a class="main-nav__link main-nav__link_black" href="catalog.html"
+              >КАТАЛОГ ПРОДУКЦИИ</a
+            >
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link_black" href="form.html">ПОДБОР ПРОГРАММЫ</a>
+            <a class="main-nav__link main-nav__link_black" href="form.html"
+              >ПОДБОР ПРОГРАММЫ</a
+            >
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="page-main wrapper selection-program__wrapper">
-        <h1 class="main-title main-title_black selection-program__title">Подбор программы</h1>
-        <h2 class="selection-program__subtitle">
-          ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА
-        </h2>
+      <h1 class="main-title main-title_black selection-program__title">
+        Подбор программы
+      </h1>
+      <h2 class="selection-program__subtitle">
+        ЗАПОЛНИТЕ АНКЕТУ, И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА
+      </h2>
 
-        <form action="POST" class="form">
-          <fieldset class="form__fieldset">
-            <div class="form__selection-program">
-              <label class="form__label">
-                <span class="form__label-text">ИМЯ:*</span>
-                <input type="text" placeholder="БАРСИК" />
-              </label>
+      <form action="POST" class="form">
+        <fieldset class="form__fieldset">
+          <div class="form__selection-program">
+            <label class="form__label">
+              <span class="form__label-text">ИМЯ:*</span>
+              <input type="text" placeholder="БАРСИК" />
+            </label>
 
-              <label class="form__label">
-                <span class="form__label-text">ВЕС (КГ):*</span>
-                <input type="number" placeholder="7" />
-              </label>
+            <label class="form__label">
+              <span class="form__label-text">ВЕС (КГ):*</span>
+              <input type="number" placeholder="7" />
+            </label>
 
-              <label class="form__label">
-                <span class="form__label-text">ВОЗРАСТ (ЛЕТ):</span>
-                <input type="number" placeholder="7" />
-              </label>
-            </div>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <div class="form__food-type">
-              <label class="form__label form__food-type-item">
-                <input class="form__radio visually-hidden" type="radio" name="meal-plan" />
-                <span class="form__food-type-label">ПОХУДЕНИЕ</span>
-              </label>
-
-              <label class="form__label form__food-type-item">
-                <input class="form__radio visually-hidden" type="radio" name="meal-plan" />
-                <span class="form__food-type-label">НАБОР МАССЫ</span>
-              </label>
-
-              <label class="form__label form__food-type-item">
-                <input class="form__radio visually-hidden" type="radio" name="meal-plan" />
-                <span class="form__food-type-label">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
-              </label>
-            </div>
-          </fieldset>
-
-          <fieldset class="form__fieldset form__contact-details">
-            <legend class="form__legend form__contact-details-legend">
-              Контактные данные (владельца кота)
-            </legend>
-            <div class="form__contact-details-container">
-              <label class="form__label form__email">
-                <span class="form__label-text">E-MAIL:*</span>
-                <input type="email" placeholder="KUKLACHEV@GMAIL.COM" />
-              </label>
-              <label class="form__label form__phone">
-                <span class="form__label-text">ТЕЛЕФОН:*</span>
-                <input type="tel" placeholder="8 (960) 900-60-90" />
-              </label>
-            </div>
-          </fieldset>
-
-          <div class="form__comment">
-            <label class="form__legend form__comment-container">
-              <span class="form__comment-legend">КОММЕНТАРИЙ</span>
-              <textarea
-                class="form__textarea"
-                name="comment"
-                cols="35"
-                rows="10"
-              >РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
+            <label class="form__label">
+              <span class="form__label-text">ВОЗРАСТ (ЛЕТ):</span>
+              <input type="number" placeholder="7" />
             </label>
           </div>
+        </fieldset>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__extra-legend">
-              ДОПОЛНИТЕЛЬНО
-            </legend>
-            <div class="form__extra">
-              <label class="form__label form__extra-label">
-                <input class="form__checkbox visually-hidden" type="checkbox" />
-                <span class="form__extra-text">САХАРОЗАМЕНИТЕЛЬ</span>
-              </label>
-              <label class="form__label form__extra-label">
-                <input class="form__checkbox visually-hidden" type="checkbox" />
-                <span class="form__extra-text">ПИТЬЕВАЯ ВОДА</span>
-              </label>
-              <label class="form__label form__extra-label">
-                <input class="form__checkbox visually-hidden" type="checkbox" />
-                <span class="form__extra-text">МОЛОКО</span>
-              </label>
-              <label class="form__label form__extra-label">
-                <input class="form__checkbox visually-hidden" type="checkbox" />
-                <span class="form__extra-text">ВИТАМИНЫ</span>
-              </label>
-            </div>
-          </fieldset>
+        <fieldset class="form__fieldset">
+          <div class="form__food-type">
+            <label class="form__label form__food-type-item">
+              <input
+                class="form__radio visually-hidden"
+                type="radio"
+                name="meal-plan"
+              />
+              <span class="form__food-type-label">ПОХУДЕНИЕ</span>
+            </label>
 
-          <input
-            class="button form__button"
-            type="submit"
-            value="ОТПРАВИТЬ ЗАЯВКУ"
-          />
-        </form>
-      </section>
+            <label class="form__label form__food-type-item">
+              <input
+                class="form__radio visually-hidden"
+                type="radio"
+                name="meal-plan"
+              />
+              <span class="form__food-type-label">НАБОР МАССЫ</span>
+            </label>
+
+            <label class="form__label form__food-type-item">
+              <input
+                class="form__radio visually-hidden"
+                type="radio"
+                name="meal-plan"
+              />
+              <span class="form__food-type-label"
+                >НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span
+              >
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fieldset form__contact-details">
+          <legend class="form__legend form__contact-details-legend">
+            Контактные данные (владельца кота)
+          </legend>
+          <div class="form__contact-details-container">
+            <label class="form__label form__email">
+              <span class="form__label-text">E-MAIL:*</span>
+              <input type="email" placeholder="KUKLACHEV@GMAIL.COM" />
+            </label>
+            <label class="form__label form__phone">
+              <span class="form__label-text">ТЕЛЕФОН:*</span>
+              <input type="tel" placeholder="8 (960) 900-60-90" />
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form__comment">
+          <label class="form__legend form__comment-container">
+            <span class="form__comment-legend">КОММЕНТАРИЙ</span>
+            <textarea class="form__textarea" name="comment" cols="35" rows="10">
+РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea
+            >
+          </label>
+        </div>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__legend form__extra-legend">ДОПОЛНИТЕЛЬНО</legend>
+          <div class="form__extra">
+            <label class="form__label form__extra-label">
+              <input class="form__checkbox visually-hidden" type="checkbox" />
+              <span class="form__extra-text">САХАРОЗАМЕНИТЕЛЬ</span>
+            </label>
+            <label class="form__label form__extra-label">
+              <input class="form__checkbox visually-hidden" type="checkbox" />
+              <span class="form__extra-text">ПИТЬЕВАЯ ВОДА</span>
+            </label>
+            <label class="form__label form__extra-label">
+              <input class="form__checkbox visually-hidden" type="checkbox" />
+              <span class="form__extra-text">МОЛОКО</span>
+            </label>
+            <label class="form__label form__extra-label">
+              <input class="form__checkbox visually-hidden" type="checkbox" />
+              <span class="form__extra-text">ВИТАМИНЫ</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <input
+          class="button form__button"
+          type="submit"
+          value="ОТПРАВИТЬ ЗАЯВКУ"
+        />
+      </form>
 
       <p class="page-main__footnote">* — Обязательные поля</p>
     </main>

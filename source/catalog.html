@@ -8,8 +8,12 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img src="img/svg/cat-energy__logo-mobile.svg" alt="cat energy" />
+      <a href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/svg/cat-energy__logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/svg/cat-energy__logo-tablet.svg">
+          <img class="page-header__logo" src="img/svg/cat-energy__logo-mobile.svg" alt="cat energy" width="190" height="38"/>
+        </picture>
       </a>
 
       <nav class="main-nav main-nav_closed">
@@ -19,19 +23,13 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link_black" href="index.html"
-              >ГЛАВНАЯ</a
-            >
+            <a class="main-nav__link main-nav__link_black" href="index.html">ГЛАВНАЯ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link_black" href="catalog.html"
-              >КАТАЛОГ ПРОДУКЦИИ</a
-            >
+            <a class="main-nav__link main-nav__link_black" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link_black" href="form.html"
-              >ПОДБОР ПРОГРАММЫ</a
-            >
+            <a class="main-nav__link main-nav__link_black" href="form.html">ПОДБОР ПРОГРАММЫ</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +44,10 @@
         <ul class="food-catalog__list">
           <li class="food-catalog__item">
             <div class="food-item">
-              <img class="food-item__img" src="img/png/chicken-min.png" alt="eat energy 500 грамм" />
+              <picture class="food-item__picture">
+                <source media="(min-width: 768px)" srcset="img/png/chicken-min-tablet.png 1x, img/png/chicken-min-tablet@2x.png 2x">
+                <img class="food-item__img" src="img/png/chicken-min-mobile.png" srcset="img/png/chicken-min-modile@2x.png 2x" alt="eat energy 500 грамм"/>
+              </picture>
               <table class="food-item__table">
                 <thead>
                   <tr>
@@ -73,7 +74,11 @@
           </li>
           <li class="food-catalog__item">
             <div class="food-item">
-              <img class="food-item__img" src="img/png/chicken-max.png" alt="eat energy 1000 грамм" />
+              <picture class="food-item__picture">
+                <source media="(min-width: 1440px)" srcset="img/png/chicken-max-desktop.png 1x, img/png/chicken-max-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/png/chicken-max-tablet.png 1x, img/png/chicken-max-tablet@2x.png 2x">
+                <img class="food-item__img" src="img/png/chicken-max-mobile.png" srcset="img/png/chicken-max-modile@2x.png 2x" alt="eat energy 500 грамм"/>
+              </picture>
               <table class="food-item__table">
                 <thead>
                   <tr>
@@ -100,7 +105,10 @@
           </li>
           <li class="food-catalog__item">
             <div class="food-item">
-              <img class="food-item__img" src="img/png/fish-min.png" alt="eat energy 500 грамм" />
+              <picture class="food-item__picture">
+                <source media="(min-width: 768px)" srcset="img/png/fish-min-tablet.png 1x, img/png/fish-min-tablet@2x.png 2x">
+                <img class="food-item__img" src="img/png/fish-min-mobile.png" srcset="img/png/fish-min-modile@2x.png 2x" alt="eat energy 500 грамм"/>
+              </picture>
               <table class="food-item__table">
                 <thead>
                   <tr>
@@ -127,7 +135,11 @@
           </li>
           <li class="food-catalog__item">
             <div class="food-item">
-              <img class="food-item__img" src="img/png/fish-max.png" alt="eat energy 1000 грамм" />
+              <picture class="food-item__picture">
+                <source media="(min-width: 1440px)" srcset="img/png/fish-max-desktop.png 1x, img/fish-max-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/png/fish-max-tablet.png 1x, img/png/fish-max-tablet@2x.png 2x">
+                <img class="food-item__img" src="img/png/fish-max-mobile.png" srcset="img/png/fish-max-modile@2x.png 2x" alt="eat energy 500 грамм"/>
+              </picture>
               <table class="food-item__table">
                 <thead>
                   <tr>
@@ -154,7 +166,10 @@
           </li>
           <li class="food-catalog__item">
             <div class="food-item">
-              <img class="food-item__img" src="img/png/buckwheat-min.png" alt="eat energy 500 грамм" />
+              <picture class="food-item__picture">
+                <source media="(min-width: 768px)" srcset="img/png/buckwheat-min-tablet.png 1x, img/png/buckwheat-min-tablet@2x.png 2x">
+                <img class="food-item__img" src="img/png/buckwheat-min-mobile.png" srcset="img/png/buckwheat-min-modile@2x.png 2x" alt="eat energy 500 грамм"/>
+              </picture>
               <table class="food-item__table">
                 <thead>
                   <tr>
@@ -181,10 +196,11 @@
           </li>
           <li class="food-catalog__item">
             <div class="food-item">
-              <img class="food-item__img"
-                src="img/png/buckwheat-max.png"
-                alt="eat energy 1000 грамм"
-              />
+              <picture class="food-item__picture">
+                <source media="(min-width: 1440px)" srcset="img/png/buckwheat-max-desktop.png 1x, img/png/buckwheat-max-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/png/buckwheat-max-tablet.png 1x, img/png/buckwheat-max-tablet@2x.png 2x">
+                <img class="food-item__img" src="img/png/buckwheat-max-mobile.png" srcset="img/png/buckwheat-max-modile@2x.png 2x" alt="eat energy 500 грамм"/>
+              </picture>
               <table class="food-item__table">
                 <thead>
                   <tr>
@@ -211,7 +227,10 @@
           </li>
           <li class="food-catalog__item">
             <div class="food-item">
-              <img class="food-item__img" src="img/png/rice-min.png" alt="eat energy 500 грамм" />
+              <picture class="food-item__picture">
+                <source media="(min-width: 768px)" srcset="img/png/rice-min-tablet.png 1x, img/png/chicriceken-min-tablet@2x.png 2x">
+                <img class="food-item__img" src="img/png/rice-min-mobile.png" srcset="img/png/rice-min-modile@2x.png 2x" alt="eat energy 500 грамм"/>
+              </picture>
               <table class="food-item__table">
                 <thead>
                   <tr>
