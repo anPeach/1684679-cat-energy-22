@@ -1,24 +1,30 @@
 .gift {
   position: relative;
   box-sizing: border-box;
-  background-color: @green;
-  min-width: 280px;
+  background: no-repeat url("../img/jpeg/gift-background-mobile.jpg");
+  background-size: auto;
   min-height: 290px;
   padding-top: 185px;
 
   @media (min-width: @tablet-width) {
     padding-top: 70px;
     min-height: 200px;
+    background: no-repeat url("../img/jpeg/gift-background-tablet.jpg");
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    left: 950px;
+    left: 975px;
     padding: 185px 40px 40px;
     min-height: 290px;
+    background: no-repeat url("../img/jpeg/gift-background-desktop.jpg");
   }
+}
+
+.gift__wrapper {
+  background-color: @green;
 }
 
 .gift::after {
