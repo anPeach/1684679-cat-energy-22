@@ -9,6 +9,7 @@
     padding: 160px 35px 40px;
     text-align: center;
     grid-template-columns: 1fr;
+    min-height: 325px;
   }
 }
 
@@ -18,8 +19,11 @@
 }
 
 .food-item__table {
+  margin-bottom: -18px;
+
   @media (min-width: @tablet-width) {
     border-collapse: collapse;
+    margin-bottom: 0;
   }
 }
 
@@ -32,6 +36,10 @@
     left: 50%;
     bottom: 300px;
     transform: translateX(-50%);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 10px;
   }
 }
 
@@ -81,9 +89,10 @@
   grid-column: span 2;
   margin-top: 20px;
   padding: 10px 0;
+  height: 40px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1;
-    margin-top: 30px;
+    margin-top: 68px;
   }
 }

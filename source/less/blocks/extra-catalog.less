@@ -1,6 +1,11 @@
 .extra-catalog {
   @media (min-width: @tablet-width) {
-    margin-top: 60px;
+    margin-top: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 80px;
+    margin-bottom: 90px;
   }
 }
 
@@ -20,6 +25,10 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
   }
 }
 
@@ -137,6 +146,7 @@
 .extra-catalog__button {
   grid-column: span 2;
   padding: 10px 0;
+  margin-top: -3px;
 
   @media (min-width: @tablet-width) {
     grid-column: span 4;
