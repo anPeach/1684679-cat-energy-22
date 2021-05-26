@@ -1,7 +1,15 @@
 .meal-plan {
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     gap: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 90px;
   }
 }
 
@@ -47,9 +55,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: static;
     width: 100px;
     height: 100px;
+    left: 50px;
+    top: 35px;
   }
 }
 
@@ -81,6 +90,8 @@
   @media (min-width: @desktop-width) {
     background-size: 134px 100px;
     margin-left: -20px;
+    left: 55px;
+    top: 35px;
   }
 }
 
@@ -101,6 +112,8 @@
   @media (min-width: @desktop-width) {
     grid-column: 2;
     padding-top: 20px;
+    margin-top: 0;
+    margin-left: 10px;
   }
 }
 
@@ -120,11 +133,12 @@
 
   @media (min-width: @desktop-width) {
     width: 467px;
-    margin: 35px 0 15px 0;
+    margin: 55px 0 15px 0;
   }
 }
 
 .meal-plan__button {
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   position: relative;
   font-size: 16px;
   line-height: 16px;
@@ -140,6 +154,10 @@
     line-height: 30px;
     border: 0;
     padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 30px;
   }
 }
 
@@ -157,18 +175,18 @@
   background: no-repeat url("../img/svg/arrow.svg");
   width: 24px;
   height: 12px;
-  left: 135px;
+  left: 105px;
   top: 48%;
   transform: translateY(-50%);
 
   @media (min-width: @tablet-width) {
-    left: 170px;
+    left: 130px;
     top: 55%;
     transform: translateY(-50%);
   }
 
   @media (min-width: @desktop-width) {
-    top: 60%;
+    top: 70%;
     transform: translateY(-50%);
   }
 }

@@ -10,13 +10,14 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 165px;
+    margin-top: 140px;
     column-gap: 60px;
     row-gap: 140px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 70px;
   }
 }
 
@@ -41,7 +42,7 @@
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
     border: 2px solid #f2f2f2;
-    padding: 140px 35px 40px;
+    padding: 160px 35px 40px;
     display: flex;
     flex-direction: column;
   }
@@ -51,10 +52,10 @@
 .food-catalog__item_show-more::after {
   content: "";
   position: absolute;
-  width: 30px;
+  width: 60px;
   height: 1px;
   background-color: #d3d3d3;
-  top: 40px;
+  top: 85px;
   left: 50%;
   transform: translateX(-50%);
 }

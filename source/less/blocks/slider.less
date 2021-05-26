@@ -1,5 +1,6 @@
 .slider {
   text-align: center;
+  margin-top: 30px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -8,7 +9,7 @@
     background-color: #eaeaea;
     height: 462px;
     margin: 0 -50px;
-    margin-top: 240px;
+    margin-top: 190px;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,12 +21,17 @@
 }
 
 .slider__img {
+  margin-left: -20px;
+
   @media (min-width: @tablet-width) {
-    margin-top: -250px;
+    margin-top: -200px;
+    margin-left: 0;
+    margin-right: -10px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: -550px;
+    margin-top: -530px;
+    margin-right: -110px;
   }
 }
 
@@ -33,13 +39,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 30px;
 
   @media (min-width: @tablet-width) {
     width: 80%;
+    margin-top: -60px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: -100px;
+    margin-right: -140px;
+    width: 560px;
   }
 }
 
@@ -96,4 +106,9 @@
   font-size: 16px;
   line-height: 20px;
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
