@@ -146,6 +146,10 @@
   }
 }
 
+.form__radio:disabled + .form__food-type-label {
+  opacity: 30%;
+}
+
 .form__radio:checked + .form__food-type-label::after {
   width: 14px;
   height: 14px;
@@ -233,7 +237,8 @@
   height: 13px;
   background: no-repeat url("../img/svg/email.svg");
   right: 12px;
-  top: 15px;
+  top: 25px;
+  transform: translateY(-50%);
 }
 
 
@@ -244,7 +249,8 @@
   height: 20px;
   background: no-repeat url("../img/svg/phone.svg");
   right: 10px;
-  top: 13px;
+  top: 25px;
+  transform: translateY(-50%);
 }
 
 .form__comment-container {
@@ -377,6 +383,10 @@
     height: 40px;
     left: -65px;
   }
+}
+
+.form__checkbox:disabled + .form__extra-text {
+  opacity: 30%;
 }
 
 .form__checkbox:checked + .form__extra-text::after {

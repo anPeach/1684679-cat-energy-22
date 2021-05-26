@@ -12,6 +12,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const { reload } = require("browser-sync");
 
 // Styles
 
@@ -139,22 +140,12 @@ const server = (done) => {
   done();
 };
 
-exports.server = server;
-
-// Reload
-
-const reload = (done) => {
-  sync.reload();
-  done();
-};
-
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series("html", sync.reload));
 };
-
 // Build
 
 const build = gulp.series(
