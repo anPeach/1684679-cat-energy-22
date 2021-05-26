@@ -1,4 +1,15 @@
-.catalog__wrapper {
+.main-wrapper_form {
+  @media (min-width: @tablet-width) {
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.main-wrapper_catalog {
   @media (min-width: @tablet-width) {
     max-width: 900px;
     margin: 0 auto;
@@ -6,18 +17,5 @@
 
   @media (min-width: @desktop-width) {
     max-width: 1220px;
-  }
-}
-
-.catalog__main-title {
-  margin-bottom: 10px;
-  margin-left: 0;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 10px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 20px;
   }
 }

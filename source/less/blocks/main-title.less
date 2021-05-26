@@ -19,22 +19,33 @@
   }
 }
 
-.main-title__subtitle {
-  color: @text-color-white;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  margin: 0;
-  padding-bottom: 30px;
+.main-title_black {
+  color: @text-color-black;
+}
+
+.main-title_selection-program {
+  margin-top: -5px;
 
   @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-    color: @text-color-black;
-    margin-left: 90px;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 }
 
-.main-title_black {
-  color: @text-color-black;
+.main-title_catalog {
+  margin-bottom: 10px;
+  margin-left: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+  }
 }
